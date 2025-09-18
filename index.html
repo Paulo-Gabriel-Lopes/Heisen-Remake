@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <link rel="shortcut icon" href="./src/symbol.webp" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body class="h-screen">
+
+<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#100429_40%,#7338A0_100%)]"></div>
+
+    <div class="flex md:flex-row flex-col">
+        <nav class="side-navbar">
+                <img src="./src/symbol.webp" alt="Estrela de 6 pontas" class="md:w-32 w-24 md:mb-2 absolute md:relative left-0 md:-mt-3">
+                <span class="side-button side-hover md:-mt-2"><a href="">HISTORIA</a></span>
+                <span class="side-button side-hover"><a href="">DEUSES</a></span>
+                <span class="side-button side-hover"><a href="">LOCAIS</a></span>
+                <span class="side-button side-hover"><a href="">PLAYERS</a></span>
+                <span class="side-button side-hover"><a href="">NPC'S</a></span>
+                <span class="side-button side-hover"><a href="">CRIATURAS</a></span>
+                <span class="side-button side-hover"><a href="">RECURSOS</a></span>
+                <h2 class="hidden">Hello World</h2>
+        </nav>
+        
+        <main class="flex-1">
+            <div class="flex items-center justify-center md:flex-row flex-col animate-pulse">
+                <h2 class="text-white text-2xl md:text-4xl font-orbitron p-4 tracking-[0.6rem] text-shadow-afternoon-burple text-shadow-lg">ENCICLOPEDIA DE HEISENBERG</h2>
+            </div>
+        </main>
+    </div>
+    </body>
+</html>
+
+<!-- npx @tailwindcss/cli -i ./input.css -o ./dist/styles.css --watch -->
