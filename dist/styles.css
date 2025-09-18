@@ -9,6 +9,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
@@ -179,6 +180,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
@@ -194,14 +198,14 @@
   .hidden {
     display: none;
   }
-  .h-full {
-    height: 100%;
+  .min-h-full {
+    min-height: 100%;
   }
-  .h-screen {
-    height: 100vh;
+  .min-h-screen {
+    min-height: 100vh;
   }
-  .w-24 {
-    width: calc(var(--spacing) * 24);
+  .w-20 {
+    width: calc(var(--spacing) * 20);
   }
   .w-full {
     width: 100%;
@@ -229,6 +233,9 @@
   }
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
+  }
+  .text-center {
+    text-align: center;
   }
   .font-orbitron {
     font-family: var(--font-orbitron);
@@ -279,6 +286,11 @@
   .md\:w-32 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 32);
+    }
+  }
+  .md\:w-\[35\%\] {
+    @media (width >= 48rem) {
+      width: 35%;
     }
   }
   .md\:flex-row {
@@ -364,6 +376,9 @@
     }
   }
   .side-navbar {
+    position: sticky;
+    top: calc(var(--spacing) * 0);
+    z-index: 20;
     display: flex;
     height: auto;
     width: 100%;
@@ -441,6 +456,22 @@
     @media (width >= 48rem) {
       text-align: center;
     }
+  }
+  .wrapperConteudo {
+    z-index: calc(2 * -1);
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .conteudo {
+    display: flex;
+    height: calc(var(--spacing) * 20);
+    width: calc(var(--spacing) * 20);
+    background-color: var(--color-amber-200);
   }
 }
 @property --tw-tracking {
