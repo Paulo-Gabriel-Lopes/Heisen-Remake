@@ -27,12 +27,13 @@
         @apply md:h-screen md:w-44 md:flex md:flex-col md:justify-center md:text-center md:items-center md:gap-5 md:border-r-2 md:border-sunrise-burple md:bg-linear-to-t md:from-midnight-burple md:to-evening-burple md:pl-0 md:border-b-0 md:flex-nowrap;
     }
     .wrapperConteudo{
-        @apply flex md:flex-row flex-col-reverse w-full justify-around -z-2;
+        @apply flex md:flex-row flex-col-reverse w-full justify-around;
     }
 
     .conteudo{
-        @apply flex w-20 h-20 bg-amber-200
+        @apply flex w-full md:w-[35%] h-[20rem]  items-center justify-center md:ml-[14%] mt-[6%]
+        border-4 border-sunrise-burple rounded-xl;
     }
 }
 
-/*@apply aplica as classes auxiliares do tailwinf, sem ela, o código será identificado como css padrão.*/
+/*@apply aplica as classes auxiliares do tailwinf, sem ela, o código será identificado como css padrão*/

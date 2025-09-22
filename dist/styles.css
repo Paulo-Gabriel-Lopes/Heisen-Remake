@@ -9,7 +9,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-600: oklch(57.7% 0.245 27.325);
-    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
@@ -19,6 +18,7 @@
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --radius-md: 0.375rem;
+    --radius-xl: 0.75rem;
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -458,7 +458,6 @@
     }
   }
   .wrapperConteudo {
-    z-index: calc(2 * -1);
     display: flex;
     width: 100%;
     flex-direction: column-reverse;
@@ -468,10 +467,22 @@
     }
   }
   .conteudo {
+    margin-top: 6%;
     display: flex;
-    height: calc(var(--spacing) * 20);
-    width: calc(var(--spacing) * 20);
-    background-color: var(--color-amber-200);
+    height: 20rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-xl);
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+    border-color: var(--color-sunrise-burple);
+    @media (width >= 48rem) {
+      margin-left: 14%;
+    }
+    @media (width >= 48rem) {
+      width: 35%;
+    }
   }
 }
 @property --tw-tracking {
