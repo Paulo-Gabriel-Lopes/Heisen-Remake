@@ -195,9 +195,6 @@
   .flex {
     display: flex;
   }
-  .hidden {
-    display: none;
-  }
   .min-h-full {
     min-height: 100%;
   }
@@ -307,7 +304,7 @@
 }
 @layer components {
   .side-button {
-    display: flex;
+    display: none;
     height: calc(var(--spacing) * 12);
     cursor: pointer;
     align-items: center;
@@ -332,6 +329,9 @@
     --tw-shadow-color: #100429;
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, var(--color-midnight-burple) var(--tw-shadow-alpha), transparent);
+    }
+    @media (width >= 48rem) {
+      display: flex;
     }
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 32);
@@ -380,7 +380,7 @@
     top: calc(var(--spacing) * 0);
     z-index: 20;
     display: flex;
-    height: auto;
+    height: calc(var(--spacing) * 24);
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
@@ -400,6 +400,9 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
     padding: calc(var(--spacing) * 3);
     padding-left: calc(var(--spacing) * 20);
+    @media (width >= 48rem) {
+      height: auto;
+    }
     @media (width >= 48rem) {
       display: flex;
     }
@@ -457,6 +460,14 @@
       text-align: center;
     }
   }
+  .menuText {
+    display: flex;
+    font-family: var(--font-orbitron);
+    color: var(--color-white);
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
   .wrapperConteudo {
     display: flex;
     width: 100%;
@@ -467,19 +478,17 @@
     }
   }
   .conteudo {
+    margin-inline: auto;
     margin-top: 6%;
     display: flex;
     height: 20rem;
-    width: 100%;
+    width: 75%;
     align-items: center;
     justify-content: center;
     border-radius: var(--radius-xl);
     border-style: var(--tw-border-style);
     border-width: 4px;
     border-color: var(--color-sunrise-burple);
-    @media (width >= 48rem) {
-      margin-left: 14%;
-    }
     @media (width >= 48rem) {
       width: 35%;
     }
@@ -496,6 +505,17 @@
   100% {
     transform: translatey(0px);
   }
+}
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+::-webkit-scrollbar-track {
+  background-color: #202020;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #FF34E1;
+  border-radius: 2px;
 }
 @property --tw-tracking {
   syntax: "*";
