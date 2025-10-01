@@ -33,7 +33,20 @@
     .conteudo{
         @apply flex w-full md:w-[35%] h-[20rem]  items-center justify-center md:ml-[14%] mt-[6%]
         border-4 border-sunrise-burple rounded-xl;
+
+        animation: float 10s ease-in-out infinite;
     }
 }
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
 
 /*@apply aplica as classes auxiliares do tailwinf, sem ela, o código será identificado como css padrão*/
