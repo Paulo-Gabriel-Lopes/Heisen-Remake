@@ -34,7 +34,7 @@
     }
 
     .conteudo{
-        @apply flex w-[75%] md:w-[35%] h-[20rem]  items-center justify-center mt-[6%] mx-auto
+        @apply flex w-[75%] md:w-[35%] min-h-0 md:h-[35%] items-center justify-center mt-[6%] mx-auto
         border-4 border-sunrise-burple rounded-xl;
 
         animation: float 10s ease-in-out infinite;

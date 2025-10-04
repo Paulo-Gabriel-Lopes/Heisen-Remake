@@ -1,7 +1,7 @@
 let imagemClick = document.querySelector('.heisenberg');
 let textoCaixa = document.querySelector('.textoHeisen');
 
-const textInicial = textoCaixa.textContent;
+const textInicial = textoCaixa.innerHTML;
 let textoMuda = 1;
 
 imagemClick.addEventListener('click', ()=>{
@@ -18,7 +18,9 @@ imagemClick.addEventListener('click', ()=>{
         textoCaixa.textContent = "Bih";
         textoMuda = 0;
     }else if(textoMuda == 0){
-        textoCaixa.textContent = textInicial;
+        textoCaixa.innerHTML = textInicial;
         textoMuda += 1;
     }
 });
+
+// textContent Apenas muda o textoCaixa, e Inner html consegue identificar tags como a </br>
