@@ -195,6 +195,9 @@
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .min-h-full {
     min-height: 100%;
   }
@@ -284,6 +287,11 @@
   .md\:mb-2 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 2);
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
     }
   }
   .md\:w-32 {
