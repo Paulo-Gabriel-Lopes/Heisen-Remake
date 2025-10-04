@@ -20,7 +20,7 @@
         @apply hover:bg-linear-to-t hover:from-midnight-burple hover:to-evening-burple hover:border-2 hover:border-white transition-all delay-[0.01s];
     }/*Alterações feitas para o mobile sempre ficam FIRST em cima*/
     .side-navbar{
-        @apply sticky top-0 h-24 md:h-auto w-full flex flex-wrap justify-center items-center bg-linear-to-t from-midnight-burple to-evening-burple gap-2 p-3 pl-20 border-sunrise-burple border-b-2 z-20;
+        @apply sticky top-0 h-24 md:h-auto w-full flex flex-wrap justify-center items-center bg-linear-to-t from-midnight-burple to-evening-burple gap-2 p-3 pl-20 border-sunrise-burple border-b-2 z-8;
         
         /*Flex wrap gera uma quebra de elemento caso eles não tenham espaço na tela (Alternativa para grid)*/
 
@@ -38,6 +38,9 @@
         border-4 border-sunrise-burple rounded-xl;
 
         animation: float 10s ease-in-out infinite;
+    }
+    .heisenberg{
+        @apply md:w-[35%] cursor-pointer select-none;
     }
 }
 @keyframes float {
