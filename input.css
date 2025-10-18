@@ -14,20 +14,20 @@
 
 @layer components{
     .side-button{
-        @apply bg-linear-to-t from-evening-burple to-afternoon-burple md:w-32 h-12 justify-center items-center hidden md:flex rounded-md font-orbitron text-white cursor-pointer shadow-md shadow-midnight-burple border-evening-burple border-4;
+        @apply bg-linear-to-t from-evening-burple to-afternoon-burple md:w-32 h-12 justify-center items-center hidden md:flex rounded-md font-orbitron text-white cursor-pointer shadow-md shadow-midnight-burple border-evening-burple border-4 md:-mb-2 lg:mb-0;
     }
     .side-hover{
         @apply hover:bg-linear-to-t hover:from-midnight-burple hover:to-evening-burple hover:border-2 hover:border-white transition-all delay-[0.01s];
     }/*Alterações feitas para o mobile sempre ficam FIRST em cima*/
     .side-navbar{
-        @apply sticky top-0 h-24 md:h-auto w-full flex flex-wrap justify-center items-center bg-linear-to-t from-midnight-burple to-evening-burple p-3 pl-20 border-sunrise-burple border-b-2 z-8;
+        @apply sticky top-0 h-24 md:h-auto w-full flex justify-center items-center bg-linear-to-t from-midnight-burple to-evening-burple p-3 pl-20 border-sunrise-burple border-b-2 z-8;
         
         /*Flex wrap gera uma quebra de elemento caso eles não tenham espaço na tela (Alternativa para grid)*/
 
         @apply md:h-screen md:w-44 md:flex md:flex-col md:justify-center md:text-center md:items-center md:gap-5 md:border-r-2 md:border-sunrise-burple md:bg-linear-to-t md:from-midnight-burple md:to-evening-burple md:pl-0 md:border-b-0;
     }
     .menuText{
-        @apply flex text-white md:hidden font-orbitron text-4xl tracking-[1.2rem];
+        @apply flex text-white md:hidden font-orbitron text-4xl tracking-[1rem];
     }
     .wrapperConteudo{
         @apply flex md:flex-row flex-col-reverse w-full justify-around;
@@ -48,7 +48,11 @@
     }
 
     .burguerItem{
-        @apply py-1 text-center font-orbitron text-white border-b-2 border-sunrise-burple bg-linear-to-t from-midnight-burple to-evening-burple
+        @apply py-2 text-center font-orbitron text-white border-b-2 border-sunrise-burple bg-linear-to-t from-midnight-burple to-evening-burple tracking-[0.4rem] cursor-pointer
+    }
+
+    .clicker{
+        @apply w-screen fixed z-30 h-23 md:hidden top-0 cursor-pointer
     }
 }
 @keyframes float {
