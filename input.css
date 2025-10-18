@@ -20,14 +20,14 @@
         @apply hover:bg-linear-to-t hover:from-midnight-burple hover:to-evening-burple hover:border-2 hover:border-white transition-all delay-[0.01s];
     }/*Alterações feitas para o mobile sempre ficam FIRST em cima*/
     .side-navbar{
-        @apply sticky top-0 h-24 md:h-auto w-full flex flex-wrap justify-center items-center bg-linear-to-t from-midnight-burple to-evening-burple gap-2 p-3 pl-20 border-sunrise-burple border-b-2 z-8;
+        @apply sticky top-0 h-24 md:h-auto w-full flex flex-wrap justify-center items-center bg-linear-to-t from-midnight-burple to-evening-burple p-3 pl-20 border-sunrise-burple border-b-2 z-8;
         
         /*Flex wrap gera uma quebra de elemento caso eles não tenham espaço na tela (Alternativa para grid)*/
 
-        @apply md:h-screen md:w-44 md:flex md:flex-col md:justify-center md:text-center md:items-center md:gap-5 md:border-r-2 md:border-sunrise-burple md:bg-linear-to-t md:from-midnight-burple md:to-evening-burple md:pl-0 md:border-b-0 md:flex-nowrap;
+        @apply md:h-screen md:w-44 md:flex md:flex-col md:justify-center md:text-center md:items-center md:gap-5 md:border-r-2 md:border-sunrise-burple md:bg-linear-to-t md:from-midnight-burple md:to-evening-burple md:pl-0 md:border-b-0;
     }
     .menuText{
-        @apply flex text-white md:hidden font-orbitron;
+        @apply flex text-white md:hidden font-orbitron text-4xl tracking-[1.2rem];
     }
     .wrapperConteudo{
         @apply flex md:flex-row flex-col-reverse w-full justify-around;
@@ -41,6 +41,14 @@
     }
     .heisenberg{
         @apply md:w-[35%] cursor-pointer select-none;
+    }
+
+    .wrapperBurguer{
+        @apply bg-afternoon-burple
+    }
+
+    .burguerItem{
+        @apply py-1 text-center font-orbitron text-white border-b-2 border-sunrise-burple bg-linear-to-t from-midnight-burple to-evening-burple
     }
 }
 @keyframes float {
