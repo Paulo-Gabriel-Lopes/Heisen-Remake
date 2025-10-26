@@ -570,6 +570,14 @@
       display: none;
     }
   }
+  .aClickArea {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-red-600);
+  }
 }
 @keyframes float {
   0% {

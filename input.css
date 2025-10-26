@@ -54,6 +54,10 @@
     .clicker{
         @apply w-screen fixed z-30 h-23 md:hidden top-0 cursor-pointer
     }
+
+    .aClickArea{
+        @apply bg-red-600 flex justify-center h-full w-full items-center
+    }
 }
 @keyframes float {
     0% {
