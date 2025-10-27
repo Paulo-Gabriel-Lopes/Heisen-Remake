@@ -599,7 +599,6 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-red-600);
   }
 }
 @keyframes float {
