@@ -71,7 +71,7 @@
     }
   }
 
-  ::-webkit-scrollbar {width: 0.2rem;
+  ::-webkit-scrollbar {width: 0.4rem;
 
   }
   
@@ -79,8 +79,20 @@
   
   }
   
-  ::-webkit-scrollbar-thumb {background-color: #FF34E1;border-radius: 2px;
+  ::-webkit-scrollbar-thumb {background-color: #9E72C3;border-radius: 2px;
   
   }
+
+  /*Paginas extras*/
+
+  .navG{
+    @apply w-full h-[10vh] md:h-[17vh] flex items-center justify-between border-sunrise-burple bg-linear-to-t from-midnight-burple to-evening-burple border-b-2
+}
+.pulseText{
+    @apply text-center w-full py-5 text-white text-2xl md:text-4xl font-orbitron p-4 tracking-[0.6rem] text-shadow-afternoon-burple text-shadow-lg animate-pulse
+}
+.titleText{
+    @apply text-white text-3xl md:text-6xl font-orbitron tracking-[0.6rem] text-shadow-morning-burple text-shadow-lg
+}
 
 /*@apply aplica as classes auxiliares do tailwinf, sem ela, o código será identificado como css padrão*/
