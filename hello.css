@@ -1,0 +1,6 @@
+@layer components{
+
+    .hi{
+        @apply bg-amber-700;
+    }
+}
