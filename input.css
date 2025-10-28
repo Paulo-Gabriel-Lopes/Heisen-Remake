@@ -110,9 +110,9 @@
 }
 
 .mainWrapper{
-    @apply h-auto w-full flex flex-wrap p-2 gap-12 items-center justify-center pb-20 border-b-2 border-morning-burple
+    @apply h-auto w-full flex flex-wrap p-2 gap-12 items-center justify-center pb-20
 }
 .footer{
-    @apply w-full bg-evening-burple flex flex-col md:flex-row justify-between items-center text-white font-orbitron text-sm
+    @apply w-full bg-evening-burple flex text-white font-orbitron text-sm border-t-2 border-morning-burple
 }
 /*@apply aplica as classes auxiliares do tailwinf, sem ela, o código será identificado como css padrão*/

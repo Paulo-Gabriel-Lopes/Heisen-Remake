@@ -12,7 +12,7 @@ imagemClick.addEventListener('click', ()=>{
         textoCaixa.innerHTML = "Hm...? Oque você poderá encontrar aqui?<br><br> Bem... uma diversidade de tópicos é claro! Como você pode ver a sua esquerda, há diversos artigos! Anotei tudo que eu considero importante! <br><br> Mas bem, o que esta esperando?";
         textoMuda += 1;
     } else if(textoMuda == 2){
-        textoCaixa.innerHTML = "Huh... Você parece ser uma pessoa bem peculiar e curiosa... Gosto disso... <br><br> ";
+        textoCaixa.innerHTML = "Huh... Você parece ser uma pessoa bem peculiar e curiosa... Gosto disso... <br><br> Mas bem, não ";
         textoMuda += 1;
     }else if(textoMuda == 3){
         textoCaixa.innerHTML = "Boh";
