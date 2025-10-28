@@ -8,22 +8,23 @@
     <title>Deuses</title>
 </head>
 
-<body>
+<body class="min-h-screen flex flex-col"> 
+<!-- As 3 classes são essenciais para consertar o erro do footer em algumas telas se localizar no meio ao invés do final-->
+
     <div class="fixed inset-0 -z-10 min-h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#100429_40%,#7338A0_100%)]"></div>
 
-    <nav class="flex">
-        <div class="navG">
-            <a href="../index.html" class="flex"><img src="../src/Back.webp" alt="Simbolo de retornar a página" class="object-contain w-full h-[7vh] md:h-[15vh]"></a>
+    <nav class="grow sticky top-0 z-30"> <!--Também necessário para consertar o erro do footer-->
+        <div class="navPages">
+            <a href="../index.html" class="flex"><img src="../src/Back.webp" alt="Simbolo de retornar a página" class="w-full h-[5.5vh] md:h-[13vh] px-4"></a>
             <h2 class="titleText">DEUSES</h2>
-            <img src="../src/symbol.webp" alt="Estrela de 6 pontas" class="h-[80%] md:h-[95%] w-auto">
+            <img src="../src/symbol.webp" alt="Estrela de 6 pontas" class="h-[80%] md:h-[95%] w-auto px-4">
         </div>
     </nav>
 
-    <main>
+    <main> <!-- CONTEUDO PRINCIPAL DA PÁGINA!!!-->
         <h2 class="pulseText">SELECIONE SEU ARTIGO</h2>
 
-        <div class=" h-auto w-full flex flex-wrap p-2 gap-12 items-center justify-center">
-            
+        <div class="mainWrapper">
             <div class="cardWrapper">
                 <a class="clickerCard" href="">
                     <img src="../src/gods-ico/Nina-Ico.webp" alt="" class="rounded-t-2xl">
@@ -47,8 +48,15 @@
                     <h2 class="cardDesc">Deus dos Cristais</h2>
                 </a>
             </div>
-
         </div>
     </main>
+
+    <footer class="footer">
+        <h2 class=" md:max-w-[55vw] text-justify p-4">&#x26A0; Muitas das imagens utilizadas foram foram adquiridas pelo pinterest e google como imagem de referência durante a jogatina da mesa de rpg. Não tenho intuito de lucrar com o uso delas e infelizmente eu não possuo os links para dar crédito aos artistas no momento. &#x26A0;</h2>
+        <div class="flex flex-row items-center px-4">
+            <h2>Paulo Gabriel / 2025</h2>
+            <img src="../src/Stamp.webp" alt="" class="h-14 pl-4">
+        </div>
+    </footer>
 </body>
 </html>
