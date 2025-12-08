@@ -12,7 +12,7 @@
 
     <div class="fixed inset-0 -z-10 min-h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#100429_40%,#7338A0_100%)]"></div>
     
-    <nav class="sticky top-0 z-30"> <!--Também necessário para consertar o erro do footer-->
+    <nav class="sticky top-0 z-30">
         <div class="navPages">
             <a href="../index.html" class="flex"><img src="../src/Back.webp" alt="Simbolo de retornar a página" class="w-full h-[5.5vh] md:h-[13vh] px-4"></a>
             <h2 class="titleText">NPC'S</h2>
@@ -20,10 +20,26 @@
         </div>
     </nav>
 
-    <main>
-        <div class="w-[92vw] h-72 bg-red-500 mx-auto mt-[6vh] p-2">
-            hello?
+    <main class="w-[92vw] h-auto bg-midnight-burple mx-auto mt-[6vh] p-2 flex flex-col">
+
+        <!-- Esse daqui é o Card de descriçã0 inicial + Imagem ---->
+        <div class="containerHead">
+            
+            <div class="h-full w-full">
+                <h1 class="tituloArtigo">BERAKINS</h1>
+                <p class="paragrafoArtigo">Hello there My friends!</p>
+            </div>
+
+            <img src="../src/articles-ico/Berkin.png" alt="" class="h-full rounded-2xl border-midnight-burple border-3">
         </div>
+
+        <!--VVV Informações abaixo do card VVV-->
+
+        <div class="containerBody">
+            <p class="paragrafoArtigo">Informações extras</p>
+        </div>
+
     </main>
+
 </body>
 </html>

@@ -117,4 +117,19 @@
 .footer{
     @apply w-full bg-evening-burple flex text-white font-orbitron text-sm border-t-2 border-morning-burple
 }
+
+/*Sessão para componentes da página de artigo*/
+.containerHead{
+    @apply bg-gradient-to-t from-evening-burple to-afternoon-burple w-full h-auto flex p-2 justify-between lg:flex-row flex-col-reverse gap-4
+}
+.containerBody{
+    @apply h-full w-full bg-gradient-to-b from-evening-burple to-afternoon-burple mt-3 p-2
+}
+.tituloArtigo{
+    @apply text-center text-5xl mb-4 font-orbitron text-white
+}
+
+.paragrafoArtigo{
+    @apply text-justify text-xl font-orbitron text-white
+}
 /*@apply aplica as classes auxiliares do tailwinf, sem ela, o código será identificado como css padrão*/
