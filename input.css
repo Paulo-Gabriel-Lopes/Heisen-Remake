@@ -120,7 +120,7 @@
 
 /*Sessão para componentes da página de artigo*/
 .containerHead{
-    @apply bg-gradient-to-t from-evening-burple to-afternoon-burple w-full h-auto flex p-2 justify-between lg:flex-row flex-col-reverse gap-4
+    @apply bg-gradient-to-t from-evening-burple to-afternoon-burple w-full h-auto flex p-2 justify-between md:flex-row flex-col-reverse gap-4
 }
 .containerBody{
     @apply h-full w-full bg-gradient-to-b from-evening-burple to-afternoon-burple mt-3 p-2
