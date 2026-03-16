@@ -132,4 +132,4 @@
 .paragrafoArtigo{
     @apply text-justify text-xl font-orbitron text-white
 }
-/*@apply aplica as classes auxiliares do tailwinf, sem ela, o código será identificado como css padrão*/
+/*@apply aplica as classes auxiliares do tailwind, sem ela, o código será identificado como css padrão*/
