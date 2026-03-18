@@ -290,19 +290,9 @@
   .justify-center {
     justify-content: center;
   }
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
-  }
   .rounded-t-2xl {
     border-top-left-radius: var(--radius-2xl);
     border-top-right-radius: var(--radius-2xl);
-  }
-  .border-5 {
-    border-style: var(--tw-border-style);
-    border-width: 5px;
-  }
-  .border-midnight-burple {
-    border-color: var(--color-midnight-burple);
   }
   .bg-midnight-burple {
     background-color: var(--color-midnight-burple);
