@@ -3,6 +3,7 @@
 
 @theme{
     --color-midnight-burple: #100429;
+    --color-Midterm-burple: #391464;
     --color-evening-burple: #4A2574;
     --color-afternoon-burple: #7338A0;
     --color-morning-burple: #924DBF;
@@ -120,10 +121,10 @@
 
 /*Sessão para componentes da página de artigo*/
 .containerHead{
-    @apply bg-gradient-to-t from-evening-burple to-afternoon-burple w-full h-auto flex p-2 justify-between md:flex-row flex-col-reverse gap-4
+    @apply bg-gradient-to-t from-Midterm-burple to-evening-burple w-full h-auto flex p-2 justify-between md:flex-row flex-col-reverse gap-4
 }
 .containerBody{
-    @apply h-full w-full bg-gradient-to-b from-evening-burple to-afternoon-burple mt-3 p-2
+    @apply h-full w-full bg-gradient-to-b from-Midterm-burple to-evening-burple mt-3 p-2
 }
 .tituloArtigo{
     @apply text-center text-5xl mb-4 font-orbitron text-white
@@ -131,5 +132,9 @@
 
 .paragrafoArtigo{
     @apply text-justify text-xl font-orbitron text-white
+}
+
+.artigoImagem{
+ @apply h-full rounded-2xl border-midnight-burple border-5
 }
 /*@apply aplica as classes auxiliares do tailwind, sem ela, o código será identificado como css padrão*/
