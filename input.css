@@ -93,16 +93,17 @@
     @apply text-center w-full py-5 text-white text-2xl md:text-4xl font-orbitron p-4 tracking-[0.6rem] text-shadow-afternoon-burple text-shadow-lg animate-pulse
 }
 .titleText{
-    @apply text-white text-3xl md:text-6xl font-orbitron tracking-[0.6rem] text-shadow-morning-burple text-shadow-lg
-}
-.titleTextSmall{
-    @apply text-white text-3xl md:text-6xl font-orbitron tracking-[0.2rem] text-shadow-morning-burple text-shadow-lg
+    @apply text-white text-2xl text-center md:text-4xl xl:text-5xl font-orbitron md:tracking-[0.6rem] tracking-[0.1rem] text-shadow-morning-burple text-shadow-lg
 }
 .cardWrapper{
     @apply max-w-72 bg-linear-to-t from-midnight-burple to-evening-burple border-b-2 p-1 flex flex-col rounded-2xl border-3 border-sunrise-burple hover:border-white hover:border-4 transition-all delay-[0.01s] hover:max-w-74 font-orbitron text-white
 }
 .cardTitle{
-    @apply text-center text-3xl text-shadow-morning-burple text-shadow-lg py-2 border-b-2 border-t-2 border-sunrise-burple
+    @apply text-center text-2xl text-shadow-morning-burple text-shadow-lg py-2 border-b-2 border-t-2 border-sunrise-burple
+}
+
+.OtherTitle{
+    @apply text-center text-3xl text-shadow-morning-burple text-shadow-lg py-2 border-b-2 border-t-2 border-sunrise-burple tracking-widest
 }
 .cardDesc{
     @apply text-center text-xl text-shadow-morning-burple text-shadow-lg
@@ -127,7 +128,7 @@
     @apply h-full w-full bg-gradient-to-b from-Midterm-burple to-evening-burple mt-3 p-2
 }
 .tituloArtigo{
-    @apply text-center text-5xl mb-4 font-orbitron text-white
+    @apply text-center text-3xl md:text-4xl lg:text-5xl mb-4 font-orbitron text-white
 }
 
 .paragrafoArtigo{
@@ -135,6 +136,7 @@
 }
 
 .artigoImagem{
- @apply h-full rounded-2xl border-midnight-burple border-5
+ @apply h-full md:h-96 lg:h-full rounded-2xl border-midnight-burple border-5
 }
+
 /*@apply aplica as classes auxiliares do tailwind, sem ela, o código será identificado como css padrão*/
